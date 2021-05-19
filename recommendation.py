@@ -22,7 +22,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def get_data():
     plant_data = pd.read_csv(
-        '/Users/supriyamalla/Desktop/project-data/actual/allplants-csv.csv')
+        '/Users/supriyamalla/Desktop/project-data/recommendation/dataset/allplants-csv.csv')
     plant_data['name'] = plant_data['name'].str.lower()
     return plant_data
     plant_data.head()
