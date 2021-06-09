@@ -78,14 +78,49 @@ def recommend_plants(name, data, combine, transform):
     plant_title = data['name'].iloc[plant_indices]
     plant_type = data['type'].iloc[plant_indices]
     plant_image = data['image'].iloc[plant_indices]
+    plant_image = data['genus'].iloc[plant_indices]
+    plant_image = data['light'].iloc[plant_indices]
+    plant_image = data['description'].iloc[plant_indices]
+    plant_image = data['propagation'].iloc[plant_indices]
+    plant_image = data['height'].iloc[plant_indices]
+    plant_image = data['width'].iloc[plant_indices]
+    plant_image = data['image'].iloc[plant_indices]
+    plant_image = data['flower_color'].iloc[plant_indices]
+    plant_image = data['foliage_color'].iloc[plant_indices]
+    plant_image = data['problem_solvers'].iloc[plant_indices]
+    plant_image = data['special_features'].iloc[plant_indices]
+    plant_image = data['care_must_knows'].iloc[plant_indices]
+    
+    
+    
 
     recommendation_data = pd.DataFrame(
-        columns=['Plant_Id', 'Name', 'Type', 'Image'])
+        columns=['Plant_Id', 'Name', 'Type', 'Image','Genus','Light','Description','Propagation','Height','Width','Flower_Color','Foliage_Color','Problem_Solvers','Special_Features','Care_Must_Knows'])
 
     recommendation_data['Plant_Id'] = plant_id
     recommendation_data['Name'] = plant_title
     recommendation_data['Type'] = plant_type
     recommendation_data['Image'] = plant_image
+    recommendation_data['Genus'] = plant_genus
+    recommendation_data['Light'] = plant_light
+    recommendation_data['Description'] = plant_description
+    recommendation_data['Propogation'] = plant_propagation
+    recommendation_data['Height'] = plant_height
+    recommendation_data['Width'] = plant_width
+    recommendation_data['Flower_Color'] = flower_color
+    recommendation_data['Foliage_Color'] = foliage_color
+    recommendation_data['Problem_Solvers'] = problem_solvers
+    recommendation_data['Special_Features'] = special_features
+    recommendation_data['Care_Must_Knows'] = care_must_knows
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     return recommendation_data
 
