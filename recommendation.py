@@ -81,7 +81,7 @@ def recommend_plants(name, data, combine, transform):
     plant_genus = data['genus'].iloc[plant_indices]
     plant_light = data['light'].iloc[plant_indices]
     plant_description= data['description'].iloc[plant_indices]
-    pplant_propagation = data['propagation'].iloc[plant_indices]
+    plant_propagation = data['propagation'].iloc[plant_indices]
     plant_height = data['height'].iloc[plant_indices]
     plant_width = data['width'].iloc[plant_indices]
     flower_color = data['flower_color'].iloc[plant_indices]
