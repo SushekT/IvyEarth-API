@@ -104,7 +104,7 @@ def recommend_plants(name, data, combine, transform):
     recommendation_data['Genus'] = plant_genus
     recommendation_data['Light'] = plant_light
     recommendation_data['Description'] = plant_description
-    recommendation_data['Propogation'] = plant_propagation
+    recommendation_data['Propagation'] = plant_propagation
     recommendation_data['Height'] = plant_height
     recommendation_data['Width'] = plant_width
     recommendation_data['Flower_Color'] = flower_color
