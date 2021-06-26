@@ -70,7 +70,7 @@ def recommend_plants(name, data, combine, transform):
 
     sim_scores = list(enumerate(transform[index]))
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
-    sim_scores = sim_scores[1:21]
+    sim_scores = sim_scores[1:6]
 
     plant_indices = [i[0] for i in sim_scores]
 
