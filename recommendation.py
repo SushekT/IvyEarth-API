@@ -94,23 +94,23 @@ def recommend_plants(name, data, combine, transform):
     
 
     recommendation_data = pd.DataFrame(
-        columns=['Plant_Id', 'Name', 'Type', 'Image','Genus','Light','Description','Propagation','Height','Width','Flower_Color','Foliage_Color','Problem_Solvers','Special_Features','Care_Must_Knows'])
+        columns=['id', 'name', 'type', 'image','genus','light','description','propagation','height','width','flower_color','Foliage_color','problem_solvers','special_features','care_must_knows'])
 
-    recommendation_data['Plant_Id'] = plant_id
-    recommendation_data['Name'] = plant_title
-    recommendation_data['Type'] = plant_type
-    recommendation_data['Image'] = plant_image
-    recommendation_data['Genus'] = plant_genus
-    recommendation_data['Light'] = plant_light
-    recommendation_data['Description'] = plant_description
-    recommendation_data['Propagation'] = plant_propagation
-    recommendation_data['Height'] = plant_height
-    recommendation_data['Width'] = plant_width
-    recommendation_data['Flower_Color'] = flower_color
-    recommendation_data['Foliage_Color'] = foliage_color
-    recommendation_data['Problem_Solvers'] = problem_solvers
-    recommendation_data['Special_Features'] = special_features
-    recommendation_data['Care_Must_Knows'] = care_must_knows
+    recommendation_data['id'] = plant_id
+    recommendation_data['name'] = plant_title
+    recommendation_data['type'] = plant_type
+    recommendation_data['image'] = plant_image
+    recommendation_data['genus'] = plant_genus
+    recommendation_data['light'] = plant_light
+    recommendation_data['description'] = plant_description
+    recommendation_data['propagation'] = plant_propagation
+    recommendation_data['height'] = plant_height
+    recommendation_data['width'] = plant_width
+    recommendation_data['flower_color'] = flower_color
+    recommendation_data['foliage_color'] = foliage_color
+    recommendation_data['problem_solvers'] = problem_solvers
+    recommendation_data['special_features'] = special_features
+    recommendation_data['care_must_knows'] = care_must_knows
     
     
     
