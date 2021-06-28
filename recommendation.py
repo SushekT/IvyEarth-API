@@ -94,7 +94,7 @@ def recommend_plants(name, data, combine, transform):
     
 
     recommendation_data = pd.DataFrame(
-        columns=['id', 'name', 'type', 'image','genus','light','description','propagation','height','width','flower_color','Foliage_color','problem_solvers','special_features','care_must_knows'])
+        columns=['id', 'name', 'type', 'image','genus','light','description','propagation','height','width','flower_color','foliage_color','problem_solvers','special_features','care_must_knows'])
 
     recommendation_data['id'] = plant_id
     recommendation_data['name'] = plant_title
